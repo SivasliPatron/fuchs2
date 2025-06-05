@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktieren Sie Fuchs Messebau für Ihr nächstes Messeprojekt">
+    <title>Kontakt - Fuchs Messebau</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+      <!-- Apple-Style CSS -->
+    <link rel="stylesheet" href="Assets/css/apple-style.css">
+    
+    <!-- Apple System Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">            <div class="navbar-content">                <a href="index.html" class="logo">
+                    <img src="Assets/images/logo.jpg" alt="Fuchs Messebau">
+                </a>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Startseite</a></li>
+                    <li><a href="About.html" class="nav-link">Über Uns</a></li>
+                    <li><a href="OurServices.html" class="nav-link">Unser Service</a></li>
+                    <li><a href="moebelverleih.html" class="nav-link">Möbelverleih</a></li>                    <li><a href="Portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="Contact.html" class="nav-link active">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="hero-title animate-on-scroll">Kontaktieren Sie uns</h1>
+            <p class="hero-subtitle animate-on-scroll">Wir freuen uns auf Ihre Nachricht und beraten Sie gerne zu Ihrem nächsten Messeprojekt</p>
+        </div>
+        <div class="animated-bg"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info animate-on-scroll">
+                    <h2>Lassen Sie uns sprechen</h2>
+                    <p>Haben Sie Fragen zu unseren Leistungen oder möchten Sie ein konkretes Projekt besprechen? Wir sind für Sie da!</p>
+                    
+                    <div class="contact-info-item">
+                        <span class="icon-emoji">📍</span>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>Musterstraße 123<br>12345 Berlin, Deutschland</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <span class="icon-emoji">📞</span>
+                        <div>
+                            <h3>Telefon</h3>
+                            <p>+49 177 399 7371</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <span class="icon-emoji">✉️</span>
+                        <div>
+                            <h3>E-Mail</h3>
+                            <p><a href="mailto:info@fuchsmessebau.de">info@fuchsmessebau.de</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <span class="icon-emoji">🕐</span>
+                        <div>
+                            <h3>Geschäftszeiten</h3>
+                            <p>Mo-Fr: 09:00 - 18:00 Uhr<br>Sa: 10:00 - 14:00 Uhr</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <h3>Nachricht senden</h3>
+                    
+                    <p class="form-note">* Pflichtfelder</p>
+                    
+                    <div class="form-row">
+                        <div class="form-group floating-label">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Ihr Name <span class="required">*</span></label>
+                            <span class="error-message">Bitte Feld ausfüllen</span>
+                        </div>
+                        
+                        <div class="form-group floating-label">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Ihre E-Mail <span class="required">*</span></label>
+                            <span class="error-message" data-empty="Bitte E-Mail eingeben" data-invalid="Bitte gültige E-Mail-Adresse eingeben">Bitte E-Mail eingeben</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <input type="tel" id="phone" name="phone" placeholder=" ">
+                        <label for="phone">Telefonnummer (optional)</label>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">Betreff <span class="required">*</span></label>
+                        <span class="error-message">Bitte Feld ausfüllen</span>
+                    </div>
+                    
+                    <div class="form-group floating-label">
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Ihre Nachricht <span class="required">*</span></label>
+                        <span class="error-message">Bitte Nachricht eingeben</span>
+                    </div>
+                    
+                    <button type="submit" class="form-submit">
+                        <span>Nachricht senden</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Map -->
+            <div class="map-container animate-on-scroll">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2428.4085445070776!2d13.377704315802!3d52.51699797981184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851c655f20989%3A0x26bbfb4e84674c63!2sBrandenburger%20Tor!5e0!3m2!1sde!2sde!4v1634567890123!5m2!1sde!2sde" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Häufig gestellte Fragen</h2>
+                <p class="section-subtitle">Hier finden Sie Antworten auf die wichtigsten Fragen</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>Wie lange dauert die Planung und Umsetzung eines Messestands?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Die Dauer hängt von der Größe und Komplexität des Projekts ab. In der Regel benötigen wir 4-8 Wochen von der ersten Konzeption bis zur fertigen Umsetzung. Bei Eilaufträgen können wir auch kürzere Zeiträume realisieren.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>Bieten Sie auch internationale Messedienstleistungen an?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ja, wir sind europaweit tätig und haben bereits zahlreiche internationale Projekte erfolgreich umgesetzt. Wir kümmern uns um alle logistischen Herausforderungen.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>Können bestehende Messestände modifiziert werden?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Selbstverständlich! Wir bieten auch Umbau- und Modernisierungsleistungen für bestehende Messestände an. Kontaktieren Sie uns für eine individuelle Beratung.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="Assets/images/logo.jpg" alt="Fuchs Messebau">
+                    </div>
+                    <p class="footer-description">
+                        Fuchs Messebau bietet professionellen Messebau und hochwertige Möbelvermietung für erfolgreiche Messeauftritte.
+                    </p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>                    <ul class="footer-links">
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="About.html">Über Uns</a></li>
+                        <li><a href="OurServices.html">Messebau</a></li>
+                        <li><a href="moebelverleih.html">Möbelverleih</a></li>                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Kontakt</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@fuchsmessebau.de">info@fuchsmessebau.de</a></p>
+                        <p><i class="fas fa-phone"></i> +49 177 399 7371</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fuchs Messebau - Alle Rechte vorbehalten</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="Assets/js/modern-script.js"></script>
+    <script src="Assets/js/contact-script.js"></script>
+    
+    <!-- Auto-Fill Form Script -->
+    <script>        // Auto-fill form based on URL parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            // Get parameters
+            const service = urlParams.get('service');
+            const subject = urlParams.get('subject');
+            const message = urlParams.get('message');
+            const category = urlParams.get('category');
+            
+            // Pre-fill subject field
+            if (subject) {
+                const subjectField = document.getElementById('subject');
+                if (subjectField) {
+                    subjectField.value = decodeURIComponent(subject);
+                    // Trigger floating label animation
+                    subjectField.classList.add('has-content');
+                }
+            }
+            
+            // Pre-fill message field with service-specific content
+            if (service === 'moebelverleih') {
+                const messageField = document.getElementById('message');
+                if (messageField && !message) {
+                    let defaultMessage = '';
+                    
+                    // Category-specific messages
+                    if (category === 'seating') {
+                        defaultMessage = `Hallo,
+
+ich interessiere mich für Ihre Sitzmöbel-Vermietung und benötige:
+
+□ Designer Stühle (Anzahl: _____)
+□ Business Sessel (Anzahl: _____)
+□ Lounge Couch-Sets (Anzahl: _____)
+□ Andere Sitzmöbel: ____________
+
+Gewünschte Farben: ____________
+
+Meine Veranstaltung:
+- Datum: ____________
+- Ort: ____________
+- Anzahl Gäste: ____________
+- Dauer: ____________
+
+Bitte senden Sie mir ein Angebot zu.
+
+Vielen Dank!`;
+                    } else if (category === 'electronics') {
+                        defaultMessage = `Hallo,
+
+ich interessiere mich für Ihre Elektronik-Vermietung und benötige:
+
+□ 45 Zoll LED TV (Anzahl: _____)
+□ 55 Zoll 4K TV (Anzahl: _____)
+□ 65 Zoll 4K TV (Anzahl: _____)
+□ 75 Zoll 4K TV (Anzahl: _____)
+□ Tablets (Anzahl: _____)
+□ Andere Elektronik: ____________
+
+Meine Veranstaltung:
+- Datum: ____________
+- Ort: ____________
+- Anzahl Gäste: ____________
+- Dauer: ____________
+
+Bitte senden Sie mir ein Angebot zu.
+
+Vielen Dank!`;
+                    } else if (category === 'catering') {
+                        defaultMessage = `Hallo,
+
+ich interessiere mich für Ihre Catering-Ausstattung und benötige:
+
+□ Profi-Kaffeemaschinen (Anzahl: _____)
+□ Minikühlschränke (Anzahl: _____)
+□ Wasserkocher (Anzahl: _____)
+□ Andere Catering-Geräte: ____________
+
+Meine Veranstaltung:
+- Datum: ____________
+- Ort: ____________
+- Anzahl Gäste: ____________
+- Dauer: ____________
+
+Bitte senden Sie mir ein Angebot zu.
+
+Vielen Dank!`;
+                    } else if (category === 'all') {
+                        defaultMessage = `Hallo,
+
+ich interessiere mich für eine Komplettausstattung für meine Veranstaltung:
+
+SITZMÖBEL:
+□ Stühle (Anzahl: _____)
+□ Sessel (Anzahl: _____)
+□ Sofas (Anzahl: _____)
+
+ELEKTRONIK:
+□ Fernseher (Größe & Anzahl: _____)
+□ Tablets (Anzahl: _____)
+
+CATERING:
+□ Kaffeemaschinen (Anzahl: _____)
+□ Kühlschränke (Anzahl: _____)
+
+SONSTIGES:
+□ Weitere Anforderungen: ____________
+
+Meine Veranstaltung:
+- Datum: ____________
+- Ort: ____________
+- Anzahl Gäste: ____________
+- Dauer: ____________
+- Art der Veranstaltung: ____________
+
+Bitte senden Sie mir ein umfassendes Angebot zu.
+
+Vielen Dank!`;
+                    } else {
+                        // Default general message
+                        defaultMessage = `Hallo,
+
+ich interessiere mich für Ihre Möbelvermietung und hätte gerne weitere Informationen zu:
+
+□ Stühle
+□ Tische
+□ Fernseher/Bildschirme
+□ Kühlschränke
+□ Kaffeemaschinen
+□ iPads/Tablets
+□ Sonstiges: ____________
+
+Meine Veranstaltung:
+- Datum: ____________
+- Ort: ____________
+- Anzahl Gäste: ____________
+- Dauer: ____________
+
+Bitte senden Sie mir ein Angebot zu.
+
+Vielen Dank!`;
+                    }
+                    
+                    messageField.value = defaultMessage;
+                    messageField.classList.add('has-content');
+                }
+            } else if (message) {
+                const messageField = document.getElementById('message');
+                if (messageField) {
+                    messageField.value = decodeURIComponent(message);
+                    messageField.classList.add('has-content');
+                }
+            }
+            
+            // Add CSS class for filled fields (for floating labels)
+            const inputs = document.querySelectorAll('.floating-label input, .floating-label textarea');
+            inputs.forEach(input => {
+                if (input.value.trim() !== '') {
+                    input.classList.add('has-content');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

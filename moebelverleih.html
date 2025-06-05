@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Möbelvermietung für Messen - Stühle, Fernseher, Kühlschränke, Kaffeemaschinen und mehr">
+    <title>Möbelverleih - Fuchs Messebau</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+    
+    <!-- Apple-Style CSS -->
+    <link rel="stylesheet" href="Assets/css/apple-style.css">
+    
+    <!-- Apple System Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">            <div class="navbar-content">                <a href="index.html" class="logo">
+                    <img src="Assets/images/logo.jpg" alt="Fuchs Messebau">
+                </a>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Startseite</a></li>
+                    <li><a href="About.html" class="nav-link">Über Uns</a></li>
+                    <li><a href="OurServices.html" class="nav-link">Unser Service</a></li>
+                    <li><a href="moebelverleih.html" class="nav-link active">Möbelverleih</a></li>
+                    <li><a href="Portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="Contact.html" class="nav-link">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="rental-hero">
+        <div class="container">
+            <h1 class="hero-title animate-on-scroll">Möbelvermietung für Messen & Events</h1>
+            <p class="hero-subtitle animate-on-scroll">Hochwertige Mietmöbel mit Liefer- und Abholservice</p>
+            <div class="hero-features">
+                <div class="feature-item">
+                    <i class="fas fa-truck"></i>
+                    <span>Lieferung & Abholung</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Premium Qualität</span>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-euro-sign"></i>
+                    <span>Preise auf Anfrage</span>
+                </div>
+            </div>
+        </div>
+        <div class="animated-bg"></div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">Alle Kategorien</button>
+                <button class="filter-btn" data-category="seating">Sitzmöbel</button>
+                <button class="filter-btn" data-category="electronics">Elektronik</button>
+                <button class="filter-btn" data-category="appliances">Geräte</button>
+                <button class="filter-btn" data-category="catering">Catering</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Products Section -->
+    <section class="rental-products-section">
+        <div class="container">
+            <div class="rental-grid">
+                
+                <!-- Stühle -->
+                <div class="rental-card animate-on-scroll" data-category="seating">
+                    <div class="rental-image">
+                        <img src="Assets/images/rental/chair-white.jpg" alt="Weiße Stühle">
+                        <div class="rental-badge">Beliebt</div>
+                    </div>
+                    <div class="rental-content">
+                        <h3>Designer Stühle</h3>
+                        <p class="rental-description">Moderne Stühle in Weiß und Schwarz. Bequem und stilvoll für jeden Messestand.</p>
+                        <div class="rental-specs">
+                            <span><i class="fas fa-palette"></i> Weiß & Schwarz</span>
+                            <span><i class="fas fa-users"></i> 1-100 Stück</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Anzahl:</label>
+                            <button class="qty-btn minus" data-product="Designer Stühle">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0" max="100" data-product="Designer Stühle">
+                            <button class="qty-btn plus" data-product="Designer Stühle">+</button>
+                        </div>
+                        <div class="color-selector-row">
+                            <select class="color-select" data-product="Designer Stühle">
+                                <option value="">Farbe wählen</option>
+                                <option value="Weiß">Weiß</option>
+                                <option value="Schwarz">Schwarz</option>
+                            </select>
+                        </div>
+                        <button class="btn-inquiry" data-product="Designer Stühle">Anfrage senden</button>
+                    </div>
+                </div>
+
+                <!-- Couch Set -->
+                <div class="rental-card animate-on-scroll" data-category="seating">
+                    <div class="rental-image">
+                        <img src="Assets/images/rental/couch-set.jpg" alt="Couch Set">
+                    </div>
+                    <div class="rental-content">
+                        <h3>Lounge Couch-Set</h3>
+                        <p class="rental-description">Gemütliche Lounge-Ecke für entspannte Gespräche mit Ihren Kunden.</p>
+                        <div class="rental-specs">
+                            <span><i class="fas fa-couch"></i> 3-Sitzer + Sessel</span>
+                            <span><i class="fas fa-palette"></i> Verschiedene Farben</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Anzahl:</label>
+                            <button class="qty-btn minus" data-product="Lounge Couch-Set">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0" max="10" data-product="Lounge Couch-Set">
+                            <button class="qty-btn plus" data-product="Lounge Couch-Set">+</button>
+                        </div>
+                        <div class="color-selector-row">
+                            <select class="color-select" data-product="Lounge Couch-Set">
+                                <option value="">Farbe wählen</option>
+                                <option value="Schwarz">Schwarz</option>
+                                <option value="Weiß">Weiß</option>
+                                <option value="Grau">Grau</option>
+                                <option value="Blau">Blau</option>
+                                <option value="Rot">Rot</option>
+                            </select>
+                        </div>
+                        <button class="btn-inquiry" data-product="Lounge Couch-Set">Anfrage senden</button>
+                    </div>
+                </div>
+
+                <!-- Sessel -->
+                <div class="rental-card animate-on-scroll" data-category="seating">
+                    <div class="rental-image">
+                        <img src="Assets/images/rental/armchair.jpg" alt="Sessel">
+                    </div>
+                    <div class="rental-content">
+                        <h3>Business Sessel</h3>
+                        <p class="rental-description">Elegante Sessel für Besprechungsbereiche und VIP-Lounges.</p>
+                        <div class="rental-specs">
+                            <span><i class="fas fa-chair"></i> Einzelsessel</span>
+                            <span><i class="fas fa-star"></i> Premium Qualität</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Anzahl:</label>
+                            <button class="qty-btn minus" data-product="Business Sessel">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0" max="20" data-product="Business Sessel">
+                            <button class="qty-btn plus" data-product="Business Sessel">+</button>
+                        </div>
+                        <button class="btn-inquiry" data-product="Business Sessel">Anfrage senden</button>
+                    </div>
+                </div>
+
+                <!-- Fernseher 45 Zoll -->
+                <div class="rental-card animate-on-scroll" data-category="electronics">
+                    <div class="rental-image">
+                        <img src="Assets/images/rental/tv-45.jpg" alt="45 Zoll Fernseher">
+                    </div>
+                    <div class="rental-content">
+                        <h3>45 Zoll LED TV</h3>
+                        <p class="rental-description">Full HD Display für Präsentationen und Produktvorführungen.</p>
+                        <div class="rental-specs">
+                            <span><i class="fas fa-tv"></i> 45 Zoll</span>
+                            <span><i class="fas fa-hd"></i> Full HD</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Anzahl:</label>
+                            <button class="qty-btn minus" data-product="45 Zoll LED TV">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0" max="10" data-product="45 Zoll LED TV">
+                            <button class="qty-btn plus" data-product="45 Zoll LED TV">+</button>
+                        </div>
+                        <button class="btn-inquiry" data-product="45 Zoll LED TV">Anfrage senden</button>
+                    </div>
+                </div>
+
+                <!-- Fernseher 55 Zoll -->
+                <div class="rental-card animate-on-scroll" data-category="electronics">
+                    <div class="rental-image">
+                        <img src="Assets/images/rental/tv-55.jpg" alt="55 Zoll Fernseher">
+                        <div class="rental-badge">Empfohlen</div>
+                    </div>
+                    <div class="rental-content">
+                        <h3>55 Zoll 4K TV</h3>
+                        <p class="rental-description">Brillante 4K Auflösung für gestochen scharfe Präsentationen.</p>
+                        <div class="rental-specs">
+                            <span><i class="fas fa-tv"></i> 55 Zoll</span>
+                            <span><i class="fas fa-expand"></i> 4K Ultra HD</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Anzahl:</label>
+                            <button class="qty-btn minus" data-product="55 Zoll 4K TV">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0" max="10" data-product="55 Zoll 4K TV">
+                            <button class="qty-btn plus" data-product="55 Zoll 4K TV">+</button>
+                        </div>
+                        <button class="btn-inquiry" data-product="55 Zoll 4K TV">Anfrage senden</button>
+                    </div>
+                </div>
+
+                <!-- Fernseher 65 Zoll -->
+                <div class="rental-card animate-on-scroll" data-category="electronics">
+                    <div class="rental-image">
+                        <img src="Assets/images/rental/tv-65.jpg" alt="65 Zoll Fernseher">
+                    </div>
+                    <div class="rental-content">
+                        <h3>65 Zoll 4K TV</h3>
+                        <p class="rental-description">Großes Display für eindrucksvolle Produktpräsentationen.</p>
+                        <div class="rental-specs">
+                            <span><i class="fas fa-tv"></i> 65 Zoll</span>
+                            <span><i class="fas fa-expand"></i> 4K Ultra HD</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Anzahl:</label>
+                            <button class="qty-btn minus" data-product="65 Zoll 4K TV">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0" max="8" data-product="65 Zoll 4K TV">
+                            <button class="qty-btn plus" data-product="65 Zoll 4K TV">+</button>
+                        </div>
+                        <button class="btn-inquiry" data-product="65 Zoll 4K TV">Anfrage senden</button>
+                    </div>
+                </div>
+
+                <!-- Fernseher 75 Zoll -->
+                <div class="rental-card animate-on-scroll" data-category="electronics">
+                    <div class="rental-image">
+                        <img src="Assets/images/rental/tv-75.jpg" alt="75 Zoll Fernseher">
+                        <div class="rental-badge">Premium</div>
+                    </div>
+                    <div class="rental-content">
+                        <h3>75 Zoll 4K TV</h3>
+                        <p class="rental-description">Maximale Bildschirmgröße für beeindruckende Präsentationen.</p>
+                        <div class="rental-specs">
+                            <span><i class="fas fa-tv"></i> 75 Zoll</span>
+                            <span><i class="fas fa-star"></i> Premium Display</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Anzahl:</label>
+                            <button class="qty-btn minus" data-product="75 Zoll 4K TV">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0" max="5" data-product="75 Zoll 4K TV">
+                            <button class="qty-btn plus" data-product="75 Zoll 4K TV">+</button>
+                        </div>
+                        <button class="btn-inquiry" data-product="75 Zoll 4K TV">Anfrage senden</button>
+                    </div>
+                </div>
+
+                <!-- iPads -->
+                <div class="rental-card animate-on-scroll" data-category="electronics">
+                    <div class="rental-image">
+                        <img src="Assets/images/rental/ipad.jpg" alt="iPads">
+                    </div>
+                    <div class="rental-content">
+                        <h3>Tablets (Redmi)</h3>
+                        <p class="rental-description">Mobile Tablets für interaktive Präsentationen und Kataloge.</p>
+                        <div class="rental-specs">
+                            <span><i class="fas fa-tablet-alt"></i> 10-11 Zoll</span>
+                            <span><i class="fas fa-wifi"></i> WiFi + 4G</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Anzahl:</label>
+                            <button class="qty-btn minus" data-product="Tablets (Redmi)">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0" max="20" data-product="Tablets (Redmi)">
+                            <button class="qty-btn plus" data-product="Tablets (Redmi)">+</button>
+                        </div>
+                        <button class="btn-inquiry" data-product="Tablets">Anfrage senden</button>
+                    </div>
+                </div>
+
+                <!-- Minikühlschrank -->
+                <div class="rental-card animate-on-scroll" data-category="appliances">
+                    <div class="rental-image">
+                        <img src="Assets/images/rental/mini-fridge.jpg" alt="Minikühlschrank">
+                    </div>
+                    <div class="rental-content">
+                        <h3>Minikühlschrank</h3>
+                        <p class="rental-description">Kompakter Kühlschrank in Weiß für Getränke und Snacks.</p>
+                        <div class="rental-specs">
+                            <span><i class="fas fa-snowflake"></i> 50-80 Liter</span>
+                            <span><i class="fas fa-bolt"></i> Energiesparend</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Anzahl:</label>
+                            <button class="qty-btn minus" data-product="Minikühlschrank">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0" max="15" data-product="Minikühlschrank">
+                            <button class="qty-btn plus" data-product="Minikühlschrank">+</button>
+                        </div>
+                        <button class="btn-inquiry" data-product="Minikühlschrank">Anfrage senden</button>
+                    </div>
+                </div>
+
+                <!-- Kaffeemaschine -->
+                <div class="rental-card animate-on-scroll" data-category="catering">
+                    <div class="rental-image">
+                        <img src="Assets/images/rental/coffee-machine.jpg" alt="Kaffeemaschine">
+                        <div class="rental-badge">Beliebt</div>
+                    </div>
+                    <div class="rental-content">
+                        <h3>Profi-Kaffeemaschine</h3>
+                        <p class="rental-description">Vollautomatische Kaffeemaschine für perfekten Kaffeegenuss.</p>
+                        <div class="rental-specs">
+                            <span><i class="fas fa-coffee"></i> Vollautomat</span>
+                            <span><i class="fas fa-mug-hot"></i> 100+ Tassen/Tag</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Anzahl:</label>
+                            <button class="qty-btn minus" data-product="Profi-Kaffeemaschine">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0" max="5" data-product="Profi-Kaffeemaschine">
+                            <button class="qty-btn plus" data-product="Profi-Kaffeemaschine">+</button>
+                        </div>
+                        <button class="btn-inquiry" data-product="Kaffeemaschine">Anfrage senden</button>
+                    </div>
+                </div>
+
+                <!-- Wasserkocher -->
+                <div class="rental-card animate-on-scroll" data-category="catering">
+                    <div class="rental-image">
+                        <img src="Assets/images/rental/water-kettle.jpg" alt="Wasserkocher">
+                    </div>
+                    <div class="rental-content">
+                        <h3>Wasserkocher</h3>
+                        <p class="rental-description">Moderne Wasserkocher für Tee und Heißgetränke.</p>
+                        <div class="rental-specs">
+                            <span><i class="fas fa-tint"></i> 1.7-2.0 Liter</span>
+                            <span><i class="fas fa-fire"></i> Schnellkochfunktion</span>
+                        </div>
+                        <div class="quantity-selector">
+                            <label>Anzahl:</label>
+                            <button class="qty-btn minus" data-product="Wasserkocher">-</button>
+                            <input type="number" class="quantity-input" value="0" min="0" max="10" data-product="Wasserkocher">
+                            <button class="qty-btn plus" data-product="Wasserkocher">+</button>
+                        </div>
+                        <button class="btn-inquiry" data-product="Wasserkocher">Anfrage senden</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="rental-info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Lieferung & Abholung</h3>
+                    <p>Wir liefern Ihre Mietmöbel pünktlich zum Messestand und holen sie nach der Veranstaltung wieder ab. Deutschlandweit und in angrenzende Länder.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                    <h3>Transparente Preise</h3>
+                    <p>Nach Ihrer Anfrage erhalten Sie ein individuelles Angebot. Die Preise richten sich nach Mietdauer, Menge und Lieferentfernung.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Qualität & Service</h3>
+                    <p>Alle Mietmöbel werden vor der Auslieferung geprüft und gereinigt. Bei Bedarf bieten wir auch Aufbau-Service an.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Inquiry Section -->
+    <section class="quick-inquiry-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Schnellanfrage für spezifische Kategorien</h2>
+                <p class="section-subtitle">Direkter Kontakt für Ihre bevorzugte Möbelkategorie</p>
+            </div>
+            
+            <div class="quick-inquiry-grid">
+                <a href="Contact.html?service=moebelverleih&subject=Sitzmöbel%20Anfrage&category=seating" class="quick-inquiry-card">
+                    <div class="inquiry-icon">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <h3>Sitzmöbel</h3>
+                    <p>Stühle, Sessel, Sofas</p>
+                    <div class="inquiry-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                
+                <a href="Contact.html?service=moebelverleih&subject=Elektronik%20Anfrage&category=electronics" class="quick-inquiry-card">
+                    <div class="inquiry-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Elektronik</h3>
+                    <p>Fernseher, Tablets, Bildschirme</p>
+                    <div class="inquiry-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                
+                <a href="Contact.html?service=moebelverleih&subject=Catering%20Ausstattung%20Anfrage&category=catering" class="quick-inquiry-card">
+                    <div class="inquiry-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Catering</h3>
+                    <p>Kaffeemaschinen, Kühlschränke</p>
+                    <div class="inquiry-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                
+                <a href="Contact.html?service=moebelverleih&subject=Komplettausstattung%20Anfrage&category=all" class="quick-inquiry-card featured">
+                    <div class="inquiry-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Komplettausstattung</h3>
+                    <p>Alles aus einer Hand</p>
+                    <div class="inquiry-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interesse an unseren Mietmöbeln?</h2>
+                <p>Senden Sie uns Ihre Anfrage und erhalten Sie ein unverbindliches Angebot</p>                <div class="cta-buttons">
+                    <a href="Contact.html?service=moebelverleih&subject=Möbelverleih%20Anfrage" class="btn btn-primary">Jetzt anfragen</a>
+                    <a href="tel:+491773997371" class="btn btn-secondary"><i class="fas fa-phone"></i> Direkt anrufen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="Assets/images/logo.jpg" alt="Fuchs Messebau">
+                    </div>
+                    <p class="footer-description">
+                        Fuchs Messebau bietet professionellen Messebau und hochwertige Möbelvermietung für erfolgreiche Messeauftritte.
+                    </p>
+                </div>
+                  <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="About.html">Über Uns</a></li>
+                        <li><a href="OurServices.html">Messebau</a></li>
+                        <li><a href="moebelverleih.html">Möbelverleih</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Kontakt</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@fuchsmessebau.de">info@fuchsmessebau.de</a></p>
+                        <p><i class="fas fa-phone"></i> +49 177 399 7371</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fuchs Messebau - Alle Rechte vorbehalten</p>
+            </div>
+        </div>
+    </footer>    <!-- Scripts -->
+    <script src="Assets/js/modern-script.js"></script>
+    <script>
+        // Rental Page Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filter functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const rentalCards = document.querySelectorAll('.rental-card');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const category = this.getAttribute('data-category');
+                    
+                    // Filter cards
+                    rentalCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Quantity selector functionality
+            const qtyBtns = document.querySelectorAll('.qty-btn');
+            const inquiryBtns = document.querySelectorAll('.btn-inquiry');
+            let selectedItems = {};
+            
+            qtyBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const product = this.getAttribute('data-product');
+                    const input = document.querySelector(`input[data-product="${product}"]`);
+                    const isPlus = this.classList.contains('plus');
+                    
+                    let currentValue = parseInt(input.value) || 0;
+                    const maxValue = parseInt(input.getAttribute('max')) || 100;
+                    
+                    if (isPlus && currentValue < maxValue) {
+                        currentValue++;
+                    } else if (!isPlus && currentValue > 0) {
+                        currentValue--;
+                    }
+                    
+                    input.value = currentValue;
+                    
+                    // Update selected items
+                    if (currentValue > 0) {
+                        selectedItems[product] = currentValue;
+                    } else {
+                        delete selectedItems[product];
+                    }
+                    
+                    updateSummary();
+                });
+            });
+            
+            // Inquiry button functionality
+            inquiryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const product = this.getAttribute('data-product');
+                    const input = document.querySelector(`input[data-product="${product}"]`);
+                    const quantity = parseInt(input.value) || 0;
+                    
+                    if (quantity > 0) {
+                        // Add to selected items
+                        selectedItems[product] = quantity;
+                        updateSummary();
+                        
+                        // Show success message
+                        showNotification(`${quantity}x ${product} zur Anfrage hinzugefügt!`, 'success');
+                    } else {
+                        showNotification('Bitte wählen Sie eine Anzahl aus!', 'warning');
+                    }
+                });
+            });
+            
+            function updateSummary() {
+                const itemCount = Object.keys(selectedItems).length;
+                
+                if (itemCount > 0) {
+                    showRentalSummary();
+                } else {
+                    hideRentalSummary();
+                }
+            }
+            
+            function showRentalSummary() {
+                let summaryHTML = '<div class="rental-summary show"><div class="summary-header"><h4>Ihre Auswahl</h4><button class="summary-close">&times;</button></div><div class="summary-list">';
+                
+                for (const [product, quantity] of Object.entries(selectedItems)) {
+                    summaryHTML += `<div class="summary-item"><span>${product}</span><span>${quantity}x</span></div>`;
+                }
+                
+                summaryHTML += '</div><div class="summary-actions"><button class="btn-clear">Löschen</button><button class="btn-submit">Anfrage senden</button></div></div>';
+                
+                // Remove existing summary
+                const existingSummary = document.querySelector('.rental-summary');
+                if (existingSummary) {
+                    existingSummary.remove();
+                }
+                
+                // Add new summary
+                document.body.insertAdjacentHTML('beforeend', summaryHTML);
+                
+                // Add event listeners
+                document.querySelector('.summary-close').addEventListener('click', hideRentalSummary);
+                document.querySelector('.btn-clear').addEventListener('click', clearSelection);
+                document.querySelector('.btn-submit').addEventListener('click', submitInquiry);
+            }
+            
+            function hideRentalSummary() {
+                const summary = document.querySelector('.rental-summary');
+                if (summary) {
+                    summary.classList.remove('show');
+                    setTimeout(() => summary.remove(), 300);
+                }
+            }
+            
+            function clearSelection() {
+                selectedItems = {};
+                // Reset all quantity inputs
+                document.querySelectorAll('.quantity-input').forEach(input => {
+                    input.value = 0;
+                });
+                hideRentalSummary();
+                showNotification('Auswahl gelöscht!', 'info');
+            }
+            
+            function submitInquiry() {
+                if (Object.keys(selectedItems).length === 0) {
+                    showNotification('Keine Artikel ausgewählt!', 'warning');
+                    return;
+                }
+                  // Create inquiry and redirect to contact form
+                let subject = 'Möbelvermietung Anfrage - Mehrere Artikel';
+                let message = 'Hallo,\n\nIch interessiere mich für folgende Mietartikel:\n\n';
+                
+                for (const [product, quantity] of Object.entries(selectedItems)) {
+                    message += `- ${product}: ${quantity} Stück\n`;
+                }
+                
+                message += '\nMeine Veranstaltung:\n- Datum: ____________\n- Ort: ____________\n- Anzahl Gäste: ____________\n- Dauer: ____________\n\nBitte senden Sie mir ein unverbindliches Angebot.\n\nVielen Dank!';
+                
+                const encodedSubject = encodeURIComponent(subject);
+                const encodedMessage = encodeURIComponent(message);
+                window.location.href = `Contact.html?service=moebelverleih&subject=${encodedSubject}&message=${encodedMessage}`;
+                
+                showNotification('Weiterleitung zum Kontaktformular...', 'success');
+            }
+            
+            function showNotification(message, type = 'info') {
+                const notification = document.createElement('div');
+                notification.className = `notification notification-${type}`;
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: ${type === 'success' ? '#34C759' : type === 'warning' ? '#FF9500' : '#007AFF'};
+                    color: white;
+                    padding: 16px 24px;
+                    border-radius: 12px;
+                    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+                    z-index: 10000;
+                    transform: translateX(100%);
+                    transition: transform 0.3s ease;
+                    max-width: 300px;
+                    font-weight: 600;
+                `;
+                notification.textContent = message;
+                
+                document.body.appendChild(notification);
+                
+                // Animate in
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(0)';
+                }, 100);
+                
+                // Remove after 3 seconds
+                setTimeout(() => {
+                    notification.style.transform = 'translateX(100%)';
+                    setTimeout(() => notification.remove(), 300);
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>
